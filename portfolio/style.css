@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: linear-gradient(to left, #191714, #130F40);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 25px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: rgb(170, 170, 250);
+    font-size: 1.05rem;
+    transition: all ease-in 0.08s;
+}
+
+.left {
+    font-size: 1.3rem;
+}
+
+.left span {
+    color: gold;
+}
+
+.firstsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px 0;
+    gap: 1.2rem;
+}
+
+
+.firstsection>div {
+    width: 35%;
+    height: 70vh;
+}
+
+
+
+.firstsection .leftsection {
+    font-size: 3rem;
+}
+
+.leftsection .more {
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+.leftsection .more button {
+    width: 150px;
+    padding: 15px 5px;
+    background-color: rgb(113 112 175);
+    color: rgb(21, 13, 54);
+    border: 1px solid rgb(113 112 175);
+    border-radius: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.leftsection .more button:hover {
+    background-color: rgb(154, 153, 226);
+}
+
+.rightsection img {
+    position: relative;
+    z-index: 10;
+    filter: drop-shadow(30px 2px 10px rgba(20, 20, 20, 0.692)) brightness(1.1);
+    width: 90%;
+    bottom: 520px;
+    right: -30px;
+
+}
+
+
+.rightsection svg {
+    position: relative;
+    transform: scale(1.15);
+}
+
+.leftsection div {
+    font-size: 50%;
+}
+
+
+.purple {
+    color: rgb(255, 196, 0);
+}
+
+
+.leftsection #element {
+    color: rgb(255, 196, 0);
+    font-size: 60%;
+}
+
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 110vh;
+}
+
+
+hr {
+    border: 0;
+    height: 1.5px;
+    background-color: rgb(93, 93, 248);
+    margin: 20px 40px;
+}
+
+
+.secondsection h1 {
+    font-size: 2rem;
+}
+
+.textgrey {
+    color: rgba(122, 120, 120, 0.664);
+
+}
+
+.secondsection .box {
+    background-color: white;
+    width: 80vw;
+    height: 2px;
+    margin: 75px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 5.5em;
+}
+
+
+.image-top {
+    width: 55px;
+    height: 40px;
+    object-fit: contain;
+    position: relative;
+    top: -55px;
+    left: -18px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 55px;
+    width: 150px;
+}
+
+
+.vertical-desc {
+    position: relative;
+    top: 65px;
+    color: grey;
+    width: 120px;
+    font-size: 11px;
+}
+
+
+
+.third {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    height: 75vh;
+}
+
+.third .about {
+    margin-left: 150px;
+}
+
+
+.third .about h1 {
+    font-size: 42px;
+}
+
+
+.third img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: contain;
+}
+
+
+
+.third p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+
+
+.fourth {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth h1 {
+    font-size: 42px;
+}
+
+.fourth .progressbars {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+}
+
+
+.container {
+    display: flex;
+    width: 100px;
+    padding: 50px 0;
+    border-radius: 8px;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    align-items: center;
+    height: 30vh;
+    background-color:black;
+}
+
+footer .quote{
+    padding:40px 0px 20px 0px;
+    font-size: 12px;
+    font-style: italic;
+    color:gray;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons span{
+    padding-right: 20px;
+    cursor: pointer;
+    transform: scale(1.4);
+}
