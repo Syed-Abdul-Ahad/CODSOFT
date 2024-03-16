@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color:#669ccb;
+    --main-darkcolor:#5681a7;
+    --sec-color:#d4e3f1;
+    --dark-text:#282d31;
+    --light-text:#767268;
+    --lightest:#f3f4f6;
+    --maxwidth:1200px;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.container_section{
+    padding: 5rem 1rem;
+    max-width:var(--maxwidth);
+    margin: auto;
+}
+
+.section_title{
+    font-size:2rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.section_subtitle{
+    font-size:1rem;
+    font-style: italic;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+    text-align:center;
+
+}
+
+img{
+    width:100%;
+}
+
+nav{
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width:100%;
+    max-width: var(--maxwidth);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo img{
+    width:4rem;
+
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--lightest);
+    font-size: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color:var(--lightest)
+}
+
+.links{
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap:2rem;
+}
+
+.link{
+    color:var(--lightest);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color:var(--main-color);
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(45,92,132,0.3),rgba(45,92,132,0.3)),url('https://tourism.gov.pk/assets/images/NMBWP.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .container_section{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+    color: var(--lightest);
+  
+}
+
+.container_header h1{
+    font-size: 5rem;
+    font-weight: 400;
+    line-height:5rem;
+}
+
+.container_header p{
+    text-align: center;
+    width: 35rem;
+}
+
+.container_header button{
+    padding: 1rem 2rem;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--lightest);
+    font-size:1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container_header button:hover{
+    background-color: var(--main-darkcolor);
+}
+
+
+.container_travel{
+    background-color: var(--sec-color);
+
+}
+
+.journey_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1rem;
+
+}
+
+.country_card{
+    background-color: var(--lightest);
+}
+
+.country_name{
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+.country_name span{
+    font-style: italic;
+}
+
+.container_travel img{
+    height: 280px;
+}
+
+
+.banner{
+    background-image: linear-gradient(rgba(35,71,103,0.5),rgba(35,71,103,0.5)),url('https://www.solimarinternational.com/wp-content/uploads/helena-lopes-PGnqT0rXWLs-unsplash-scaled.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .container_section{
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content:center;
+
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1.5rem;
+    text-align: center;
+    color:var(--lightest)
+}
+
+.content h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+.content button{
+    padding:0.5rem 2rem;
+    outline: none;
+    border: 2px solid var(--sec-color);
+    color:var(--main-darkcolor);
+    background-color: var(--lightest);
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+
+.display{
+    background-color: var(--sec-color);
+    align-items: center;
+}
+
+.display .section_title,
+.display .section_subtitle {
+    color: var(--dark-text);
+}
+
+.display .section_title{
+    padding-top: 20px;
+}
+
+.grid{
+    width: 100vw;
+    display:grid;
+    grid-template-columns: 300px 200px 200px ;
+    justify-content: center;
+    padding-bottom: 20px;
+    /* grid-template-columns: repeat(2,1fr); */
+    gap:1rem;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    gap: 0.5rem;
+    background-color: var(--lightest);
+    text-align: center;
+
+}
+
+.grid .grid1{
+    grid-area: 1/1/2/3;
+}
+
+.grid .grid2{
+    grid-row: 1/2;
+    columns: 3/4;
+}
+
+.grid img{
+    height: 100%;
+}
+
+
+footer{
+    background-color: var(--dark-text);
+    color:var(--sec-color);
+
+}
+
+footer .container_section{
+    display: grid;
+    gap:1.5rem;
+    text-align: center;
+}
+
+footer h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.icons i{
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+footer p{
+    font-style: italic;
+}
+
+@media (min-width: 640px){
+    .links{
+        display: flex;
+    }
+
+    header .container_section{
+        justify-content: flex-start;
+    }
+
+    .container_header{
+        max-width: 400px;
+        align-items:flex-start ;
+    }
+
+    .container_header p{
+        text-align: left;
+    }
+
+    .journey_grid{
+        grid-template-columns: repeat(3,1fr) ;
+        gap:1rem;
+    }
+
+    .grid{
+        grid-template-columns: 200px 150px 200px 200px 200;
+        justify-content: center;
+        /* grid-template-columns: repeat(4,1fr); */
+    }
+
+    .card{
+        gap:0;
+    }
+}
+
+
+@media (min-width:786px){
+
+    .card{
+        gap:0.5rem;
+    }
+
+}
+
+@media (min-width:1024px){
+    .card{
+        gap:1rem;
+    }
+}
